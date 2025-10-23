@@ -1,4 +1,4 @@
-package com.newrelic.instrumentation.spring.web.async;
+package com.newrelic.instrumentation.spring.async;
 
 import java.util.concurrent.Callable;
 

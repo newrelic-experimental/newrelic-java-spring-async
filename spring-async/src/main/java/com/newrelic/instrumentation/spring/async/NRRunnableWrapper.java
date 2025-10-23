@@ -1,4 +1,4 @@
-package com.newrelic.instrumentation.spring.web.async;
+package com.newrelic.instrumentation.spring.async;
 
 import com.newrelic.agent.bridge.AgentBridge;
 import com.newrelic.api.agent.NewRelic;
