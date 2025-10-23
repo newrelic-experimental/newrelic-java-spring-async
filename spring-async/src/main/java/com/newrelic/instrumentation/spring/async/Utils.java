@@ -1,4 +1,4 @@
-package com.newrelic.instrumentation.spring.web.async;
+package com.newrelic.instrumentation.spring.async;
 
 import java.util.concurrent.Callable;
 
@@ -12,7 +12,7 @@ public class Utils {
 		if(r instanceof NRRunnableWrapper) return null;
 		
 		String packageName = r.getClass().getPackage().getName();
-		if(packageName.startsWith("com.newrelic")) return null;
+		if(packageName.startsWith("com.newrelic") || packageName.startsWith("com.nr")) return null;
 		
 		Token token = NewRelic.getAgent().getTransaction().getToken();
 		if(token != null && token.isActive()) {
@@ -29,7 +29,7 @@ public class Utils {
 		if(c instanceof NRCallableWrapper) return null;
 		
 		String packageName = c.getClass().getPackage().getName();
-		if(packageName.startsWith("com.newrelic")) return null;
+		if(packageName.startsWith("com.newrelic") || packageName.startsWith("com.nr")) return null;
 		
 		Token token = NewRelic.getAgent().getTransaction().getToken();
 		if(token != null && token.isActive()) {
