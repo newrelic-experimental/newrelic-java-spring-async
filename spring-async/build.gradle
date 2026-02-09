@@ -23,7 +23,7 @@ jar {
 }
 
 verifyInstrumentation {
-	passesOnly 'org.springframework:spring-core:[4.0.0.RELEASE,)'
+	passesOnly 'org.springframework:spring-core:[4.0.0.RELEASE,7.0.0)'
         excludeRegex '.*M.*'
     excludeRegex '.*RC.*'
 

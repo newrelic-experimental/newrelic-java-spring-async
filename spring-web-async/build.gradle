@@ -23,5 +23,5 @@ jar {
 }
 
 verifyInstrumentation {
-	passes 'org.springframework:spring-web:[5.0.0.RELEASE,)'
+	passesOnly 'org.springframework:spring-web:[5.0.0.RELEASE,)'
 }
