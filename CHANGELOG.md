@@ -1,3 +1,6 @@
+## Version: [v1.0.2](https://github.com/newrelic-experimental/newrelic-java-spring-async/releases/tag/v1.0.2) | Created: 2026-02-09
+
+
 ## Version: [v1.0.0](https://github.com/newrelic-experimental/newrelic-java-spring-async/releases/tag/v1.0.0) | Created: 2024-04-04
 
 
