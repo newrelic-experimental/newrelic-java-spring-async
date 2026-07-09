@@ -9,8 +9,8 @@ dependencies {
     implementation 'org.springframework:spring-core:7.0.0'
 
     // New Relic Java Agent dependencies
-    implementation 'com.newrelic.agent.java:newrelic-agent:8.4.0'
-    implementation 'com.newrelic.agent.java:newrelic-api:8.4.0'
+    implementation 'com.newrelic.agent.java:newrelic-agent:' + project.findProperty('java.agent.version')
+    implementation 'com.newrelic.agent.java:newrelic-api:' + project.findProperty('java.agent.version')
     implementation 'com.newrelic.agent.java:agent-bridge:8.4.0'
     implementation fileTree(include: ['*.jar'], dir: '../test-lib')
 }
